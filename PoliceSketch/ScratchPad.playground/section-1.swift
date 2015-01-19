@@ -87,32 +87,30 @@ class PoliceSketch {
 
 var currentSketch = PoliceSketch()
 
-// Test Next Eye Image function
-currentSketch.currentEyeImage
-currentSketch.nextEyeImage()
-currentSketch.currentEyeImage
-currentSketch.nextEyeImage()
-currentSketch.currentEyeImage
-currentSketch.nextEyeImage()
-currentSketch.currentEyeImage
-currentSketch.nextEyeImage()
-currentSketch.currentEyeImage
-currentSketch.nextEyeImage()
-currentSketch.currentEyeImage
-currentSketch.nextEyeImage()
+// Test Next Nose Image function
+currentSketch.currentNoseImage
+currentSketch.nextNoseImage()
+currentSketch.currentNoseImage
+currentSketch.nextNoseImage()
+currentSketch.currentNoseImage
+currentSketch.nextNoseImage()
+currentSketch.currentNoseImage
+currentSketch.nextNoseImage()
+currentSketch.currentNoseImage
+currentSketch.nextNoseImage()
+currentSketch.currentNoseImage
+currentSketch.nextNoseImage()
 
-// Test Previous Eye Image function
-currentSketch.currentEyeImage
-currentSketch.previousEyeImage()
-currentSketch.currentEyeImage
-currentSketch.previousEyeImage()
-currentSketch.currentEyeImage
-currentSketch.previousEyeImage()
-currentSketch.currentEyeImage
-currentSketch.previousEyeImage()
-currentSketch.currentEyeImage
-currentSketch.previousEyeImage()
-currentSketch.currentEyeImage
-currentSketch.previousEyeImage()
-
-
+// Test Previous Nose Image function
+currentSketch.currentNoseImage
+currentSketch.previousNoseImage()
+currentSketch.currentNoseImage
+currentSketch.previousNoseImage()
+currentSketch.currentNoseImage
+currentSketch.previousNoseImage()
+currentSketch.currentNoseImage
+currentSketch.previousNoseImage()
+currentSketch.currentNoseImage
+currentSketch.previousNoseImage()
+currentSketch.currentNoseImage
+currentSketch.previousNoseImage()

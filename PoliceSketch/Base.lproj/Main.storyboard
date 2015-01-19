@@ -37,68 +37,83 @@
                                     <constraint firstAttribute="width" constant="220" id="K7O-BC-cVQ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-pY-iOj">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-pY-iOj">
                                 <rect key="frame" x="140" y="100" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="B21-Sc-csW"/>
                                     <constraint firstAttribute="height" constant="100" id="Ofd-mu-VgQ"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="arrow_left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="previousButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dUO-3n-Bth"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWx-Lw-gMC">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWx-Lw-gMC">
                                 <rect key="frame" x="410" y="100" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="BsE-FG-69K"/>
                                     <constraint firstAttribute="width" constant="50" id="Yc0-v3-u8R"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="arrow_right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v96-HZ-EJv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-xC-GMn">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-xC-GMn">
                                 <rect key="frame" x="140" y="250" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="44N-tw-5jH"/>
                                     <constraint firstAttribute="width" constant="50" id="qbz-c5-51N"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="arrow_left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Puu-6K-Ebf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-i1-vVO">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-i1-vVO">
                                 <rect key="frame" x="410" y="250" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="CP8-4N-YZN"/>
                                     <constraint firstAttribute="width" constant="50" id="KNw-jq-yEP"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="arrow_right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WEm-wB-LN1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-Gd-a4f">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-Gd-a4f">
                                 <rect key="frame" x="140" y="400" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Iii-lM-Iec"/>
                                     <constraint firstAttribute="width" constant="50" id="RmP-I3-ByE"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="arrow_left">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bz1-my-VTR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-l9-qAL">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-l9-qAL">
                                 <rect key="frame" x="410" y="400" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mjh-cm-EcK"/>
                                     <constraint firstAttribute="width" constant="50" id="oKp-0e-Sbk"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" image="arrow_right">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Uu-7S-fjj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -139,4 +154,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow_left" width="50" height="100"/>
+        <image name="arrow_right" width="50" height="100"/>
+    </resources>
 </document>
