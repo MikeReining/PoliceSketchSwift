@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="width" constant="220" id="K7O-BC-cVQ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-pY-iOj">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-pY-iOj">
                                 <rect key="frame" x="140" y="100" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="B21-Sc-csW"/>
@@ -46,8 +46,11 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dUO-3n-Bth"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWx-Lw-gMC">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWx-Lw-gMC">
                                 <rect key="frame" x="410" y="100" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="BsE-FG-69K"/>
@@ -57,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-xC-GMn">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-xC-GMn">
                                 <rect key="frame" x="140" y="250" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="44N-tw-5jH"/>
@@ -67,7 +70,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-i1-vVO">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-i1-vVO">
                                 <rect key="frame" x="410" y="250" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="CP8-4N-YZN"/>
@@ -77,7 +80,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-Gd-a4f">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-Gd-a4f">
                                 <rect key="frame" x="140" y="400" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Iii-lM-Iec"/>
@@ -87,7 +90,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-l9-qAL">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-l9-qAL">
                                 <rect key="frame" x="410" y="400" width="50" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="mjh-cm-EcK"/>
@@ -120,6 +123,18 @@
                             <constraint firstItem="H1W-l9-qAL" firstAttribute="centerY" secondItem="tLn-Wc-tSJ" secondAttribute="centerY" id="vcV-hF-GB9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eyesImageView" destination="EYa-zj-6Ps" id="nFM-wM-icc"/>
+                        <outlet property="mouthImageView" destination="tLn-Wc-tSJ" id="uDj-mQ-HYI"/>
+                        <outlet property="nextButtonPressed" destination="wWx-Lw-gMC" id="K2M-EJ-1BX"/>
+                        <outlet property="nextEyeButton" destination="wWx-Lw-gMC" id="umO-Ef-obs"/>
+                        <outlet property="nextMouthButton" destination="H1W-l9-qAL" id="q2J-xb-EX7"/>
+                        <outlet property="nextNoseButton" destination="QGL-i1-vVO" id="x8z-Uf-5UT"/>
+                        <outlet property="noseImageView" destination="jYv-za-j8N" id="bxt-1i-hwk"/>
+                        <outlet property="previousEyeButton" destination="zv9-pY-iOj" id="nJw-LS-K7O"/>
+                        <outlet property="previousMouthButton" destination="CvU-Gd-a4f" id="Rf4-MT-iyC"/>
+                        <outlet property="previousNoseButton" destination="YhK-xC-GMn" id="wxI-2r-0IG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
