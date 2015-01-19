@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27BD91141A6D993B00E49AAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BD91131A6D993B00E49AAA /* UIKit.framework */; };
 		27F1A7331A6D53A900B61C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1A7321A6D53A900B61C53 /* AppDelegate.swift */; };
 		27F1A7351A6D53A900B61C53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F1A7341A6D53A900B61C53 /* ViewController.swift */; };
 		27F1A7381A6D53A900B61C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F1A7361A6D53A900B61C53 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27399ECC1A6D98F100CBAD54 /* UIImageView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = UIImageView.playground; sourceTree = "<group>"; };
+		27BD91131A6D993B00E49AAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27F1A72D1A6D53A900B61C53 /* PoliceSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliceSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F1A7311A6D53A900B61C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F1A7321A6D53A900B61C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BD91141A6D993B00E49AAA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27399ECD1A6D98F900CBAD54 /* ScratchPads */ = {
+			isa = PBXGroup;
+			children = (
+				27F1A7541A6D8DBD00B61C53 /* ScratchPad.playground */,
+				27399ECC1A6D98F100CBAD54 /* UIImageView.playground */,
+			);
+			name = ScratchPads;
+			sourceTree = "<group>";
+		};
 		27F1A7241A6D53A900B61C53 = {
 			isa = PBXGroup;
 			children = (
+				27BD91131A6D993B00E49AAA /* UIKit.framework */,
 				27F1A72F1A6D53A900B61C53 /* PoliceSketch */,
 				27F1A7451A6D53A900B61C53 /* PoliceSketchTests */,
 				27F1A72E1A6D53A900B61C53 /* Products */,
@@ -84,7 +98,7 @@
 				27F1A7341A6D53A900B61C53 /* ViewController.swift */,
 				27F1A7361A6D53A900B61C53 /* Main.storyboard */,
 				27F1A7521A6D8C9800B61C53 /* PoliceSketch.swift */,
-				27F1A7541A6D8DBD00B61C53 /* ScratchPad.playground */,
+				27399ECD1A6D98F900CBAD54 /* ScratchPads */,
 				27F1A7391A6D53A900B61C53 /* Images.xcassets */,
 				27F1A73B1A6D53A900B61C53 /* LaunchScreen.xib */,
 				27F1A7301A6D53A900B61C53 /* Supporting Files */,
@@ -411,6 +425,7 @@
 				27F1A74E1A6D53A900B61C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27F1A74F1A6D53A900B61C53 /* Build configuration list for PBXNativeTarget "PoliceSketchTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +434,7 @@
 				27F1A7511A6D53A900B61C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

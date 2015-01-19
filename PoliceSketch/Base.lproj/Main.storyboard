@@ -126,7 +126,6 @@
                     <connections>
                         <outlet property="eyesImageView" destination="EYa-zj-6Ps" id="nFM-wM-icc"/>
                         <outlet property="mouthImageView" destination="tLn-Wc-tSJ" id="uDj-mQ-HYI"/>
-                        <outlet property="nextButtonPressed" destination="wWx-Lw-gMC" id="K2M-EJ-1BX"/>
                         <outlet property="nextEyeButton" destination="wWx-Lw-gMC" id="umO-Ef-obs"/>
                         <outlet property="nextMouthButton" destination="H1W-l9-qAL" id="q2J-xb-EX7"/>
                         <outlet property="nextNoseButton" destination="QGL-i1-vVO" id="x8z-Uf-5UT"/>

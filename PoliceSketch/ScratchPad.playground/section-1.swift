@@ -2,6 +2,7 @@
 
 import Cocoa
 
+
 var str = "Hello, playground"
 
 class PoliceSketch {

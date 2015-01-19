@@ -21,9 +21,18 @@ class ViewController: UIViewController {
 
     @IBAction func previousButtonPressed(sender: AnyObject) {
     }
-    @IBOutlet weak var nextButtonPressed: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var sketch = PoliceSketch()
+        eyesImageView.image = UIImage(named: sketch.eyeImages[sketch.currentEyeImage])
+        noseImageView.image = UIImage(named: sketch.noseImages[sketch.currentNoseImage])
+        mouthImageView.image = UIImage(named: sketch.mouthImages[sketch.currentMouthImage])
+        println("Good so far")
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
