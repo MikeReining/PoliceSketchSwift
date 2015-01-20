@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qm2-a1-Dx1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Switching View Controller-->
+        <scene sceneID="SYo-AL-nY7">
+            <objects>
+                <viewController id="Qm2-a1-Dx1" customClass="SwitchingViewController" customModule="PoliceSketch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HVe-gy-lZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLG-tX-uR7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t2N-Sz-0mz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-2f-gBC">
+                                <rect key="frame" x="16" y="562" width="84" height="30"/>
+                                <state key="normal" title="Switch View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchViews:" destination="Qm2-a1-Dx1" eventType="touchUpInside" id="5KW-Q3-kGL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ygh-2f-gBC" firstAttribute="leading" secondItem="t2N-Sz-0mz" secondAttribute="leadingMargin" id="KJL-ac-9xy"/>
+                            <constraint firstItem="RLG-tX-uR7" firstAttribute="top" secondItem="ygh-2f-gBC" secondAttribute="bottom" constant="8" id="igg-CS-rh7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKM-wL-3y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="293"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PoliceSketch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonVC" id="vXZ-lx-hvc" customClass="ViewController" customModule="PoliceSketch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -152,6 +186,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="642" y="277"/>
+        </scene>
+        <!--Guesture View Controller-->
+        <scene sceneID="q4J-oE-Zsh">
+            <objects>
+                <viewController storyboardIdentifier="GuestureVC" id="4hI-4J-8AJ" customClass="GuestureViewController" customModule="PoliceSketch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OD4-OH-0G8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mpZ-yd-FEq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BwH-Oc-lSD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rnr-O8-CeQ">
+                                <rect key="frame" x="190" y="100" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XGa-tL-8Jg"/>
+                                    <constraint firstAttribute="width" constant="220" id="uwn-GX-h7p"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-kY-maR">
+                                <rect key="frame" x="190" y="250" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0iR-aL-BoJ"/>
+                                    <constraint firstAttribute="width" constant="220" id="8Fa-0o-Gvg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKR-t6-h4W">
+                                <rect key="frame" x="190" y="400" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AZH-JX-sBH"/>
+                                    <constraint firstAttribute="width" constant="220" id="KqW-oy-azg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uKR-t6-h4W" firstAttribute="top" secondItem="fiM-kY-maR" secondAttribute="bottom" constant="50" id="En4-jk-AU8"/>
+                            <constraint firstAttribute="centerX" secondItem="uKR-t6-h4W" secondAttribute="centerX" id="an5-sq-2Cq"/>
+                            <constraint firstAttribute="centerX" secondItem="fiM-kY-maR" secondAttribute="centerX" id="g3h-1R-9en"/>
+                            <constraint firstAttribute="centerX" secondItem="Rnr-O8-CeQ" secondAttribute="centerX" id="ohC-q4-igr"/>
+                            <constraint firstItem="Rnr-O8-CeQ" firstAttribute="top" secondItem="OD4-OH-0G8" secondAttribute="bottom" constant="80" id="smh-Rv-6in"/>
+                            <constraint firstItem="fiM-kY-maR" firstAttribute="top" secondItem="Rnr-O8-CeQ" secondAttribute="bottom" constant="50" id="z6X-sd-mbb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eyesImageView" destination="Rnr-O8-CeQ" id="p5s-kU-xOk"/>
+                        <outlet property="mouthImageView" destination="uKR-t6-h4W" id="Eba-6D-qJA"/>
+                        <outlet property="noseImageView" destination="fiM-kY-maR" id="rIv-3g-EMd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="has-Yg-a28" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="985"/>
         </scene>
     </scenes>
     <resources>
